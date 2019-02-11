@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>POS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/logo.png" type="icon">
+        
+    <link href='https://fonts.googleapis.com/css?family=Fenix' rel='stylesheet'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" type="text/css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#"><i class="fas fa-user"></i> User Account</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <!--<h5>first -12</h5>-->
+                     
+                    <div class="col-xs-7" style="border: 1px solid #7f7f7f; margin: 0px;">
+                        <!--<h5>items</h5>-->
+                        <div class="row tables">
+                            <!--<h5>tables</h5>-->
+                            <div class="col-xs-12 table_buttons">
+                                <button type="button" class="btn">Table 1</button>
+                                <button type="button" class="btn">Table 2</button>
+                                <button type="button" class="btn">Table 3</button>
+                                <button type="button" class="btn">Table 4</button>
+                                <button type="button" class="btn">Table 5</button>
+                                <button type="button" class="btn">Table 6</button>
+                                <button type="button" class="btn">Table 7</button>
+                                <button type="button" class="btn">Table 8</button>
+                                <button type="button" class="btn">Table 9</button>
+                                <button type="button" class="btn">Table 10</button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row menus">
+                            <!--<h5>Menus</h5>-->
+                            <div class="col-xs-12" style="padding: 0px; margin: 0px;">
+                                <div class="col-xs-3 category">
+                                    
+                                        <button type="button" class="btn active btn-block" onClick="toggleVisibility('all_category')";><span>All</span></button><br>
+                                        <button type="button" class="btn btn-block" onclick="toggleVisibility('menu1')";><span>Chicken Curry</span></button><br>
+                                        <button type="button" class="btn btn-block" onclick="toggleVisibility('menu2')";><span>Chinese Rice</span></button><br>
+                                        <button type="button" class="btn btn-block" onclick="toggleVisibility('menu3')";><span>Chinese Sea Food</span></button><br>
+                                        <button type="button" class="btn btn-block" onclick="toggleVisibility('menu4')";><span>Chinese Chicken</span></button><br>
+                                        <button type="button" class="btn btn-block" onclick="toggleVisibility('menu5')";><span>Cool Drinks</span></button>
+                                </div>
+                                <!--<div class="col-xs-1">
+                                    <center><div class="vertical-line" style=" width: 1px; height: 500px; background-color: white;"></div></center>
+                                </div>-->
+                                <div class="col-xs-9 sub-category">
+                                    <!--<h5>Sub category</h5>-->
+
+                                    <div id="all_category">
+                                        <ul class="grid cs-style-3">
+                                            <h4><u>All Menus :-</u></h4>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/andhra_chicken.jpg">
+                                                    <figcaption>
+                                                        <span>Andhra Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/butter_chicken.jpeg">
+                                                    <figcaption>
+                                                        <span>Butter Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_dopiaza_2.jpg">
+                                                    <figcaption>
+                                                        <span>Chicken Dopiaza</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_masala_1.jpeg">
+                                                    <figcaption>
+                                                        <span>Chicken Masala</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+
+
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_friedrice_1.jpeg">
+                                                    <figcaption>
+                                                        <span>Chicken Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chinese_eggfriedrice.jpg">
+                                                    <figcaption>
+                                                        <span>Egg Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chinese_friedrice.jpg">
+                                                    <figcaption>
+                                                        <span>Vegetable Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/jeera_rice.jpeg">
+                                                    <figcaption>
+                                                        <span>Jeera Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+
+
+
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/fish_chilli.jpeg">
+                                                    <figcaption>
+                                                        <span>Chilli Fish</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/fish_garlic.jpg">
+                                                    <figcaption>
+                                                        <span>Fish Hot Garlic</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/fish_manchurian.jpg">
+                                                    <figcaption>
+                                                        <span>Fish Manchurian</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/lemon_fish.jpg">
+                                                    <figcaption>
+                                                        <span>Lemon Fish</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+
+
+
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_manchurian.jpg">
+                                                    <figcaption>
+                                                        <span>Chicken Manchurian</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/ginger_chicken.jpeg">
+                                                    <figcaption>
+                                                        <span>Ginger Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/pepper_chicken.jpg">
+                                                    <figcaption>
+                                                        <span>Pepper Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/szechuan_chicken.jpg">
+                                                    <figcaption>
+                                                        <span>Szechuan Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+
+
+                                            
+                                        </ul>
+
+                                    </div>
+
+                                    <div id="menu1">
+                                        <ul class="grid cs-style-3">
+                                            <h4><u>Chicken Curry :-</u></h4>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/andhra_chicken.jpg">
+                                                    <figcaption>
+                                                        <span>Andhra Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/butter_chicken.jpeg">
+                                                    <figcaption>
+                                                        <span>Butter Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_dopiaza_2.jpg">
+                                                    <figcaption>
+                                                        <span>Chicken Dopiaza</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_masala_1.jpeg">
+                                                    <figcaption>
+                                                        <span>Chicken Masala</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                           
+                                            
+                                        </ul>
+
+                                    </div>
+
+                                    <div id="menu2">
+                                        <ul class="grid cs-style-3">
+                                            <h4><u>Chinese Rice :-</u></h4>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_friedrice_1.jpeg">
+                                                    <figcaption>
+                                                        <span>Chicken Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chinese_eggfriedrice.jpg">
+                                                    <figcaption>
+                                                        <span>Egg Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chinese_friedrice.jpg">
+                                                    <figcaption>
+                                                        <span>Vegetable Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/jeera_rice.jpeg">
+                                                    <figcaption>
+                                                        <span>Jeera Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            
+                                           
+                                        </ul>
+
+                                    </div>
+
+
+                                    <div id="menu3">
+                                        <ul class="grid cs-style-3">
+                                            <h4><u>Chinese Sea Food :-</u></h4>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/fish_chilli.jpeg">
+                                                    <figcaption>
+                                                        <span>Chilli Fish</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/fish_garlic.jpg">
+                                                    <figcaption>
+                                                        <span>Fish Hot Garlic</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/fish_manchurian.jpg">
+                                                    <figcaption>
+                                                        <span>Fish Manchurian</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/lemon_fish.jpg">
+                                                    <figcaption>
+                                                        <span>Lemon Fish</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+
+                                    </div>
+
+
+                                    <div id="menu4">
+                                        <ul class="grid cs-style-3">
+                                            <h4><u>Chinese Chicken :-</u></h4>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/chicken_manchurian.jpg">
+                                                    <figcaption>
+                                                        <span>Chicken Manchurian</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/ginger_chicken.jpeg">
+                                                    <figcaption>
+                                                        <span>Ginger Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/pepper_chicken.jpg">
+                                                    <figcaption>
+                                                        <span>Pepper Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/szechuan_chicken.jpg">
+                                                    <figcaption>
+                                                        <span>Szechuan Chicken</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            
+                                            
+                                        </ul>
+
+                                    </div>
+
+
+                                    <div id="menu5">
+                                        <ul class="grid cs-style-3">
+                                            <h4><u>Cool Drinks :-</u></h4>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/item_1.jpg">
+                                                    <figcaption>
+                                                        <span>Chicken Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/item_2.jpg">
+                                                    <figcaption>
+                                                        <span>Egg Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/item_5.jpg">
+                                                    <figcaption>
+                                                        <span>Vegetable Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/item_4.jpg">
+                                                    <figcaption>
+                                                        <span>Jeera Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <figure>
+                                                    <img class="img-responsive" src="image/item_3.jpg">
+                                                    <figcaption>
+                                                        <span>Mutton Fried Rice</span>
+                                                    </figcaption>
+                                                </figure>
+                                            </li>
+                                            
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-5">
+                        <!--<h5>Bill</h5>-->
+                        <div class="row" style="">
+                            <div class="col-xs-4 col-sm-4" style="padding: 5px;">
+                                <span id="date"></span><span> /<br> </span><span id="time"></span>
+                            </div>
+                            <div class="col-xs-2 col-sm-2"></div>
+                            <div class="col-xs-3 col-sm-3" style="padding-right: 5px;">
+                                <label>Table No: </label>
+                                <input type="number" class="form-control" name="table number" autofocus style="background-color: #DDDDDD; color: black;">
+                            </div>
+                            <div class="col-xs-3 col-sm-3" style="padding: 0px;">
+                                <label>Order No:</label>
+                                <input type="number" class="form-control" name="order number" style="background-color: #DDDDDD; color: black;">
+                            </div>
+                        </div><br>
+                        
+                        <div class="row">
+                            <div class="col-xs-12" style="height: 200px;  border-bottom: 1px solid #7f7f7f; border-top: 1px solid #7f7f7f; background-color: #262626; overflow-y: auto;">
+                                <table class="table table-responsive">
+                                    <thead style="">
+                                        <tr>
+                                            <th style="text-align: center;">Item</th>
+                                            <th style="text-align: center;">Qty</th>
+                                            <th style="text-align: center;">Price</th>
+                                            <th style="text-align: center;">Amount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="text-align: center;">
+                                        <tr>
+                                            <td>Pepper Chicken</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pepper Chicken</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pepper Chicken</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pepper Chicken</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pepper Chicken</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pepper Chicken</td>
+                                            <td>2</td>
+                                            <td>100</td>
+                                            <td>200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="col-xs-12" style="background-color: #262626;">
+                                <div class="col-xs-6 gst">
+                                    <button type="button" class="btn" readonly><span class="pull-left">GST: 18%</span>-<span class="pull-right">25.6033</span></button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <table class="table table-responsive">
+                                        <tbody style="text-align: center;">
+                                            <tr>
+                                                <td style="border-top: none;">Total:</td>
+                                                <td style="border-top: none;">800</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12" style="margin-top: 10px; padding: 10px;">
+                                <div class="col-xs-6 payment_button">
+                                     <button type="button" class="btn">Cash</button>
+                                     <button type="button" class="btn">Card</button>
+                                </div>
+                                <div class="col-xs-6 balance" style="padding: 0px;">
+                                    <div class="col-xs-12" style="padding: 0px; margin: 5px;">
+                                        <label class="col-xs-6">Given Amount:</label>
+                                        <input class="col-xs-6" type="number" class="form-control" name="amount">
+                                    </div>
+                                    <div class="col-xs-12" style="padding: 0px;  margin: 5px;">
+                                        <label class="col-xs-6">Balance:</label>
+                                        <input class="col-xs-6" type="number" class="form-control" name="Balance">
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div> 
+                        <div class="row" style="margin-top: 50px;">
+                             <div class="col-xs-12 order_button">
+                                <center><button type="button" class="btn">Send Receipt</button>
+                                <button type="button" class="btn">Hold Order</button>
+                                <button type="button" class="btn">Cancel Order</button></center>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript">
+    
+            var divs = ["all_category","menu1", "menu2", "menu3", "menu4" , "menu5" ];
+            var visibleDivId = null;
+            function toggleVisibility(divId) {
+              if(visibleDivId === divId) {
+                visibleDivId = null;
+              } else {
+                visibleDivId = divId;
+              }
+              hideNonVisibleDivs();
+            }
+            function hideNonVisibleDivs() {
+              var i, divId, div;
+              for(i = 0; i < divs.length; i++) {
+                divId = divs[i];
+                div = document.getElementById(divId);
+                if(visibleDivId === divId) {
+                  div.style.display = "block";
+                } else {
+                  div.style.display = "none";
+                }
+              }
+            }
+
+        </script>
+
+        <script>
+            var d = new Date();
+            document.getElementById("date").innerHTML = d.toDateString();
+        </script>
+
+        <script>
+            var d = new Date();
+            var n = d.toLocaleTimeString();
+            document.getElementById("time").innerHTML = n;
+            
+        </script>
+
+    </body>
+    </html>

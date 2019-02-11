@@ -1,0 +1,393 @@
+body{
+	font-family: 'Fenix';
+	background-color: #111111;
+	color: white;
+	font-size: 15px;
+	height: 100vh;
+}
+
+.navbar{
+	border: 1px solid #7f7f7f;
+	
+	border-radius: 0px;	
+	height: 5vh;
+}
+
+/*
+.navbar .navbar-nav li a{
+	color: white;
+
+}
+.navbar .navbar-nav li a:hover{
+	color: #d7d7d7;
+	background-color: #3f3f3f;
+}
+.navbar .navbar-nav li a:focus{
+	color: #d7d7d7;
+	background-color: #3f3f3f;
+}
+
+.navbar-collapse ul li{
+	z-index: 999;
+	background-color: black;
+}
+.navbar-toggle{
+	background-color: white;
+	padding: 5px;
+}
+.navbar-toggle .icon-bar{
+	background-color: black;
+
+}*/
+
+.tables{
+	border: 1px solid #2f2f2f;
+	margin: 0px;
+	padding: 5px;
+	background-color: #2f2f2f;
+	border-radius: 5px;
+	overflow-x: auto;
+}
+
+.table_buttons button{
+	color: black;
+}
+
+.menus{
+	margin: 0px;
+}
+
+.category{
+	border-right: 1px solid white;
+	overflow-y: auto;
+	height: 76vh;
+
+}
+.category button{
+	width: 100%;
+	background-color: #262626;
+	color: white;
+	border-radius: 5px;
+
+}
+.category button:hover{
+	background-color: #262626;
+	color: white;
+	
+}
+.category button:active{
+	background-color: white;
+	color: black;
+	border-radius: 5px !important;
+}
+.category button:focus{
+	background-color: white;
+	color: black;
+	outline: none !important;
+	border-radius: 5px !important;
+}
+
+.category button span{
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 20px;
+	white-space: normal;
+}
+
+#menu1, #menu2, #menu3, #menu4, #menu5{
+	display: none;
+}
+
+.sub-category{
+	padding: 0px;
+	margin: 0px;
+	border-left: 1px solid white;
+	height: 76vh;
+	overflow-y: auto;
+}
+
+.sub-category #all_category ul{
+	list-style: none;
+	
+}
+
+.sub-category #all_category ul li{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 3px;
+}
+.sub-category #all_category ul li img{
+	display: block;
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #7f7f7f;
+	box-shadow: 0 0 2px 1px #4c4c4c;
+	border-radius: 5px;
+}
+.sub-category #all_category ul li img:hover{
+	box-shadow: 0 0 4px 3px #4c4c4c;
+}
+
+.sub-category #menu1 ul{
+	list-style: none;
+	
+}
+
+.sub-category #menu1 ul li{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 3px;
+}
+.sub-category #menu1 ul li img{
+	display: block;
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #7f7f7f;
+	box-shadow: 0 0 2px 1px #4c4c4c;
+	border-radius: 5px;
+}
+.sub-category #menu1 ul li img:hover{
+	box-shadow: 0 0 4px 3px #4c4c4c;
+}
+
+
+.sub-category #menu2 ul{
+	list-style: none;
+	
+}
+
+.sub-category #menu2 ul li{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 3px;
+}
+.sub-category #menu2 ul li img{
+	display: block;
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #7f7f7f;
+	box-shadow: 0 0 2px 1px #4c4c4c;
+	border-radius: 5px;
+}
+.sub-category #menu2 ul li img:hover{
+	box-shadow: 0 0 4px 3px #4c4c4c;
+}
+
+
+.sub-category #menu3 ul{
+	list-style: none;
+	
+}
+
+.sub-category #menu3 ul li{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 3px;
+}
+.sub-category #menu3 ul li img{
+	display: block;
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #7f7f7f;
+	box-shadow: 0 0 2px 1px #4c4c4c;
+	border-radius: 5px;
+}
+.sub-category #menu3 ul li img:hover{
+	box-shadow: 0 0 4px 3px #4c4c4c;
+}
+
+
+
+.sub-category #menu4 ul{
+	list-style: none;
+	
+}
+
+.sub-category #menu4 ul li{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 3px;
+}
+.sub-category #menu4 ul li img{
+	display: block;
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #7f7f7f;
+	box-shadow: 0 0 2px 1px #4c4c4c;
+	border-radius: 5px;
+}
+.sub-category #menu4 ul li img:hover{
+	box-shadow: 0 0 4px 3px #4c4c4c;
+}
+
+
+.sub-category #menu5 ul{
+	list-style: none;
+	
+}
+
+.sub-category #menu5 ul li{
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	margin: 3px;
+}
+.sub-category #menu5 ul li img{
+	display: block;
+	width: 150px;
+	height: 120px;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid #7f7f7f;
+	box-shadow: 0 0 2px 1px #4c4c4c;
+	border-radius: 5px;
+}
+.sub-category #menu5 ul li img:hover{
+	box-shadow: 0 0 4px 3px #4c4c4c;
+}
+
+
+figcaption{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 3px 0px;
+	vertical-align: middle;
+	background-color: rgba(47,47,47, 0.7);
+	text-align: center;
+	font-size: 18px;
+}
+
+figcaption span{
+	
+}
+
+.payment_button button{
+	background-color: #262626;
+	color: white;
+}
+.payment_button button:hover{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	outline: none !important;
+}
+.payment_button button:focus{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	outline: none !important;
+}
+
+.balance input{
+	border-radius: 5px;
+	color: black;
+	outline: none !important;
+}
+
+.gst button{
+	width: 100%;
+	margin-top: 5px;
+	background-color: black;
+	color: white;
+	cursor: default;
+}
+.gst button:hover{
+	background-color: black;
+	color: white;
+}
+.gst button:focus{
+	background-color: black;
+	outline: 0 !important;
+	color: white;
+}
+.gst button:active{
+	background-color: black;
+	color: white;
+}
+
+.order_button button{
+	background-color: #262626;
+	color: white;
+}
+
+.order_button button:hover{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	outline: none !important;
+}
+.order_button button:focus{
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	outline: none !important;
+}
+
+
+@media screen and (max-width: 1263px){
+	.category button span{
+		font-size: 18px;
+	}
+	figcaption{
+		font-size: 15px;
+	}
+	.sub-category #all_category ul li img, .sub-category #menu1 ul li img, .sub-category #menu2 ul li img, .sub-category #menu3 ul li img, .sub-category #menu4 ul li img, .sub-category #menu5 ul li img{
+		width: 110px;
+		height: 80px;
+	}
+	.category{
+		padding: 10px;
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	body{
+		font-size: 10px;
+	}
+	.navbar-collapse ul li{
+	z-index: 999;
+	background-color: black;
+	}
+
+	.category button span{
+		font-size: 12px;
+	}
+	figcaption{
+		font-size: 10px;
+	}
+	.tables{
+		padding: 0px;
+	}
+	.table_buttons button{
+		font-size: 10px;
+	}
+	.sub-category #all_category ul li img, .sub-category #menu1 ul li img, .sub-category #menu2 ul li img, .sub-category #menu3 ul li img, .sub-category #menu4 ul li img, .sub-category #menu5 ul li img{
+		width: 70px;
+		height: 50px;
+	}
+	.category{
+		padding: 5px;
+	}
+
+}
+
+
+
